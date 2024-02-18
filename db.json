@@ -1,0 +1,30 @@
+{
+	"categories": [
+		{
+			"name": "Home",
+			"type": "expense"
+		},
+		{
+			"name": "Salary",
+			"type": "income"
+		}
+	],
+	"incomes": [
+		{
+			"amount": 3000,
+			"date": "01-02-2024 / 21:09:22",
+			"source": "Salary",
+			"description": "Simple description",
+			"category": 1
+		}
+	],
+	"expenses": [
+		{
+			"amount": 3000,
+			"date": "01-02-2024 / 21:09:22",
+			"source": "Salary",
+			"description": "Simple description",
+			"category": 1
+		}
+	]
+}
