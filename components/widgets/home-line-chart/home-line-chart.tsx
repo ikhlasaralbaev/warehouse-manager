@@ -1,5 +1,5 @@
+import { HomeCard } from '@/components/common'
 import ChartColorInfo from '@/components/common/chart-color-info/chart-color-info'
-import { HomeCard } from '@/components/common/home-card/home-card.styles'
 import { FC } from 'react'
 import { Line, LineChart, ResponsiveContainer } from 'recharts'
 import { HomeLineChartWrapper } from '../widgets.styles'
@@ -7,38 +7,38 @@ import { HomeLineChartWrapper } from '../widgets.styles'
 const data = [
 	{
 		name: 'Page A',
-		uv: 0,
-		pv: 0,
+		uv: 4000,
+		pv: 2400,
 	},
 	{
 		name: 'Page B',
-		uv: 0,
-		pv: 0,
+		uv: 3000,
+		pv: 1398,
 	},
 	{
 		name: 'Page C',
-		uv: 0,
-		pv: 0,
+		uv: 2000,
+		pv: 9800,
 	},
 	{
 		name: 'Page D',
-		uv: 0,
-		pv: 0,
+		uv: 2780,
+		pv: 3908,
 	},
 	{
 		name: 'Page E',
-		uv: 0,
-		pv: 0,
+		uv: 1890,
+		pv: 4800,
 	},
 	{
 		name: 'Page F',
-		uv: 0,
-		pv: 0,
+		uv: 2390,
+		pv: 3800,
 	},
 	{
 		name: 'Page G',
-		uv: 0,
-		pv: 0,
+		uv: 3490,
+		pv: 4300,
 	},
 ]
 

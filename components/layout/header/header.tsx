@@ -1,10 +1,14 @@
 'use client'
 
-import ThemeToggler from '@/components/common/theme-toggler'
+import { ThemeToggler } from '@/components/common'
+import { navMenuData } from '@/shared/nav-menu.data'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { HeaderWrapperEl } from './header.styles'
 
 const Header = () => {
+	const pathname = usePathname()
+
 	return (
 		<HeaderWrapperEl>
 			<Link className='header-logo' href='/'>
@@ -13,15 +17,16 @@ const Header = () => {
 
 			<nav className='header-navigation'>
 				<ul className='header-menu'>
-					<li>
-						<Link href='/'>Home</Link>
-					</li>
-					<li>
-						<Link href='/incomes'>Incomes</Link>
-					</li>
-					<li>
-						<Link href='/expenses'>Expenses</Link>
-					</li>
+					{navMenuData.map(item => (
+						<li>
+							<Link
+								className={pathname === item.path ? 'active' : ''}
+								href={item.path}
+							>
+								{item.label}
+							</Link>
+						</li>
+					))}
 				</ul>
 
 				<ThemeToggler />

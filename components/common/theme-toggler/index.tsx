@@ -9,7 +9,10 @@ const ThemeToggler = () => {
 	const { theme } = useAppSelector(state => state.ui)
 
 	return (
-		<ThemeTogglerWrapperEl onClick={() => dispatch(changeThemeMode())}>
+		<ThemeTogglerWrapperEl
+			title='Change theme mode'
+			onClick={() => dispatch(changeThemeMode())}
+		>
 			{theme === 'light' ? <BiMoon /> : <BiSun />}
 		</ThemeTogglerWrapperEl>
 	)

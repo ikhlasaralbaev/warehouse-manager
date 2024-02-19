@@ -44,7 +44,8 @@ export const HeaderWrapperEl = styled.header`
 					font-weight: 500;
 					transition: color 0.2s ease;
 
-					&:hover {
+					&:hover,
+					&.active {
 						color: ${props => props.theme.primaryColor};
 					}
 				}

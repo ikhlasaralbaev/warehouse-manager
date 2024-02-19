@@ -12,4 +12,8 @@ export const ThemeTogglerWrapperEl = styled.button`
 	&:active {
 		transform: scale(0.95);
 	}
+
+	&:focus {
+		outline: 2px solid ${({ theme }) => theme.primaryColor};
+	}
 `

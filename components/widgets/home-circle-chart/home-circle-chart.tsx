@@ -1,12 +1,11 @@
-import { HomeCard } from '@/components/common/home-card/home-card.styles'
+import { ChartColorInfo, HomeCard } from '@/components/common'
 
-import ChartColorInfo from '@/components/common/chart-color-info/chart-color-info'
 import { Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import { HomePieChartWrapper } from '../widgets.styles'
 
 const data01 = [
-	{ name: 'Incomes', value: 0, fill: '#20C997' },
-	{ name: 'Expenses', value: 0, fill: '#EB5757' },
+	{ name: 'Incomes', value: 2000, fill: '#20C997' },
+	{ name: 'Expenses', value: 1400, fill: '#EB5757' },
 ]
 
 const HomeCircleChart = () => {
