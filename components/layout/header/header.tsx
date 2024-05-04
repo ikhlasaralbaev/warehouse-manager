@@ -4,6 +4,7 @@ import { ThemeToggler } from '@/components/common'
 import { navMenuData } from '@/shared/nav-menu.data'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import HeaderHamburgerMenu from './header-hamburger-menu'
 import { HeaderWrapperEl } from './header.styles'
 
 const Header = () => {
@@ -12,13 +13,13 @@ const Header = () => {
 	return (
 		<HeaderWrapperEl>
 			<Link className='header-logo' href='/'>
-				<h1>ZeroDev</h1>
+				<h1>Warehouse</h1>
 			</Link>
 
 			<nav className='header-navigation'>
 				<ul className='header-menu'>
 					{navMenuData.map(item => (
-						<li>
+						<li key={item.path}>
 							<Link
 								className={pathname === item.path ? 'active' : ''}
 								href={item.path}
@@ -31,6 +32,7 @@ const Header = () => {
 
 				<ThemeToggler />
 			</nav>
+			<HeaderHamburgerMenu />
 		</HeaderWrapperEl>
 	)
 }

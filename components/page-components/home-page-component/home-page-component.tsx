@@ -10,7 +10,7 @@ const HomePageComponent = () => {
 			<Container>
 				<div className='home-title'>
 					<h1>
-						<b>Good morning, </b> ZeroDev!
+						<b>Good morning, </b> Admin!
 					</h1>
 					<p>Welcome Back</p>
 				</div>

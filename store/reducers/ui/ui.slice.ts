@@ -8,7 +8,7 @@ interface IInitialStateType {
 
 const initialState: IInitialStateType = {
 	theme:
-		(localStorage.getItem('zerodev-theme-mode') as ThemeModeTypes) || 'light',
+		(localStorage.getItem('warehouse-theme-mode') as ThemeModeTypes) || 'dark',
 }
 
 export const uiSlice = createSlice({

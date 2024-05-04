@@ -8,6 +8,8 @@ export const darkTheme = {
 	greenColor: '#20C997',
 	redColor: '#EB5757',
 	border: '1px solid transparent',
+	hamburgerBgColor: 'rgb(24, 24, 24)',
+	buttonTextColor: '#fff',
 }
 export const lightTheme = {
 	primaryColor: '#443AD8',
@@ -19,4 +21,6 @@ export const lightTheme = {
 	greenColor: '#20C997',
 	redColor: '#EB5757',
 	border: '1px solid #ECECEC',
+	hamburgerBgColor: 'rgb(255, 255, 255)',
+	buttonTextColor: '#fff',
 }

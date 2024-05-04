@@ -1,14 +1,19 @@
-export const navMenuData = [
+export interface INavMenuData {
+	label: string
+	path: string
+}
+
+export const navMenuData: INavMenuData[] = [
 	{
 		label: 'Home',
 		path: '/',
 	},
 	{
-		label: 'Incomes',
-		path: '/incomes',
+		label: 'Products',
+		path: '/products',
 	},
 	{
-		label: 'Expenses',
-		path: '/expenses',
+		label: 'Categories',
+		path: '/categories',
 	},
 ]
