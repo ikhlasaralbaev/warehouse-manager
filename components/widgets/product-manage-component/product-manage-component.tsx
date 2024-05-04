@@ -1,3 +1,5 @@
+'use client'
+
 import { ButtonComponent } from '@/components/common/button/ButtonComponent.styles'
 import { Input, Select, Textarea } from '@/components/common/input/input.style'
 import { useAppSelector } from '@/hooks/redux-hooks'
@@ -67,7 +69,7 @@ const ProductManageComponent = () => {
 
 			dispatch(setProductDrawerIsOpen())
 			dispatch(setProductUpdateData())
-			window.dispatchEvent(new Event('storage'))
+			window?.dispatchEvent(new Event('storage'))
 		},
 	})
 

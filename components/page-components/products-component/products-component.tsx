@@ -31,7 +31,7 @@ const ProductsComponent = () => {
 		dispatch(getProducts(JSON.parse(products)))
 	}, [localStorage])
 
-	window.addEventListener('storage', () => {
+	window?.addEventListener('storage', () => {
 		const products = localStorage.getItem('warehouse-products')
 
 		if (!products) return

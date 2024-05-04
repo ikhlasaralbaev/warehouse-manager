@@ -20,7 +20,7 @@ const useCategoryTableData = ({ categories }: Props) => {
 			'warehouse-categories',
 			JSON.stringify(categories.filter((item: ICategoryType) => item.id !== id))
 		)
-		window.dispatchEvent(new Event('storage'))
+		window?.dispatchEvent(new Event('storage'))
 	}
 
 	function updateCategory(item: ICategoryType) {

@@ -7,8 +7,7 @@ interface IInitialStateType {
 }
 
 const initialState: IInitialStateType = {
-	theme:
-		(localStorage.getItem('warehouse-theme-mode') as ThemeModeTypes) || 'dark',
+	theme: 'dark',
 }
 
 export const uiSlice = createSlice({

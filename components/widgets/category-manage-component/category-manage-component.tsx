@@ -1,3 +1,5 @@
+'use client'
+
 import { ButtonComponent } from '@/components/common/button/ButtonComponent.styles'
 import { Flex } from '@/components/common/flex/flex'
 import { Input } from '@/components/common/input/input.style'
@@ -50,7 +52,7 @@ const CategoryManageComponent: FC = () => {
 
 		setCategoryName('')
 
-		window.dispatchEvent(new Event('storage'))
+		window?.dispatchEvent(new Event('storage'))
 	}
 
 	function updateProduct() {
@@ -72,7 +74,7 @@ const CategoryManageComponent: FC = () => {
 
 		dispatch(clearUpdatingCategory())
 
-		window.dispatchEvent(new Event('storage'))
+		window?.dispatchEvent(new Event('storage'))
 	}
 
 	return (

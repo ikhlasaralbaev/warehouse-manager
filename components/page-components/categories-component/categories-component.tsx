@@ -1,4 +1,5 @@
 'use client'
+
 import { TableComponent } from '@/components/common'
 import CategoryManageComponent from '@/components/widgets/category-manage-component/category-manage-component'
 import { useAppDispatch, useAppSelector } from '@/hooks/redux-hooks'
@@ -26,7 +27,7 @@ const CategoriesComponent = () => {
 		fetchCategories()
 	}, [])
 
-	window.addEventListener('storage', () => {
+	window?.addEventListener('storage', () => {
 		fetchCategories()
 	})
 
