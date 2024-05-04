@@ -1,7 +1,16 @@
-import ProductsComponent from '@/components/page-components/products-component/products-component'
+import dynamic from 'next/dynamic'
+
+const ProductsComponent = dynamic(
+	() =>
+		import(
+			'@/components/page-components/products-component/products-component'
+		),
+	{
+		ssr: false,
+	}
+)
 
 const Products = () => {
-	if (typeof window === 'undefined') return
 	return <ProductsComponent />
 }
 
