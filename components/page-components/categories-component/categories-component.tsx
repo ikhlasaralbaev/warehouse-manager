@@ -30,7 +30,7 @@ const CategoriesComponent = () => {
 	window?.addEventListener('storage', () => {
 		fetchCategories()
 	})
-
+	if (typeof window === 'undefined') return null
 	return (
 		<CategoriesComponentWrapper>
 			<CategoriesHeadWrapper>

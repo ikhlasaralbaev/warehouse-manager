@@ -24,6 +24,7 @@ const ProductsComponent = () => {
 	const dispatch = useAppDispatch()
 
 	useEffect(() => {
+		if (typeof window === 'undefined') return
 		const products = localStorage.getItem('warehouse-products')
 
 		if (!products) return
